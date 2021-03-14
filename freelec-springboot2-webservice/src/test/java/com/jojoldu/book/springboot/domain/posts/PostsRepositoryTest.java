@@ -16,11 +16,11 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class PostsRepositoryTest {
 
     @Autowired
-    PostRepository postRepository;
+    PostsRepository postsRepository;
 
     @After
     public void cleanup(){
-        postRepository.deleteAll();
+        postsRepository.deleteAll();
     }
 
     @Test
@@ -28,13 +28,13 @@ public class PostsRepositoryTest {
         String title="테스트 게시글";
         String content="테스트 본문";
 
-        postRepository.save(Posts.builder()
+        postsRepository.save(Posts.builder()
                 .title(title)
                 .content(content)
                 .author("tjswl756@naver.com")
                 .build());
 
-        List<Posts> postsList=postRepository.findAll();
+        List<Posts> postsList= postsRepository.findAll();
 
         Posts posts=postsList.get(0);
         assertThat(posts.getTitle()).isEqualTo(title);
