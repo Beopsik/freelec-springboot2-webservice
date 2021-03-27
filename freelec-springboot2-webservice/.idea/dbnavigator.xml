@@ -26,21 +26,13 @@
     <show-object-properties value="true" />
     <loaded-nodes>
       <connection connection-id="568b9e4c-a0dd-495a-92f3-02efdd6a2453">
-        <schema name="mysql" object-types="function, table, view" />
+        <schema name="freelec_springboot2_webservice" object-types="function, procedure, table, view" />
       </connection>
     </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="568b9e4c-a0dd-495a-92f3-02efdd6a2453">
-      <console name="freelec-springboot2-webservice" type="STANDARD" schema="mysql" session="Main"><![CDATA[CREATE TABLE test(
-    id bigint(20)  NOT NULL AUTO_INCREMENT,
-    content varchar(255) DEFAULT NULL,
-    PRIMARY KEY(id)
-)ENGINE=InnoDB;
-
-insert into test(content) values('테스트');
-
-select * from test;]]></console>
+      <console name="freelec-springboot2-webservice" type="STANDARD" schema="mysql" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
