@@ -26,7 +26,7 @@
     <show-object-properties value="true" />
     <loaded-nodes>
       <connection connection-id="568b9e4c-a0dd-495a-92f3-02efdd6a2453">
-        <schema name="freelec_springboot2_webservice" object-types="function, procedure, table, view" />
+        <schema name="freelec_springboot2_webservice" object-types="constraint, function, procedure, column, table, index, view, dataset trigger" />
       </connection>
     </loaded-nodes>
   </component>
