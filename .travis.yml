@@ -22,3 +22,5 @@ notifications:
   email:
     recipients:
       - tjswl756@naver.com
+    on_success: always
+    on_failure: always
