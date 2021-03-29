@@ -21,4 +21,4 @@ script: "./gradlew clean build"
 notifications:
   email:
     recipients:
-      - mbsik6082@naver.com
+      - tjswl756@naver.com
