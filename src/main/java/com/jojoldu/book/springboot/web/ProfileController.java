@@ -20,6 +20,17 @@ public class ProfileController {
 
         String defaultProfile=profiles.isEmpty()? "default" : profiles.get(0);
 
+        for(int i=0; i<profiles.size(); i++){
+            System.out.println("---------------");
+            System.out.println(profiles.get(i));
+        }
+        /*String returnVal = profiles.stream()
+                .filter(realProfiles::contains)
+                .findAny()
+                .orElse("fuck");
+
+        System.out.println(returnVal);*/
+
         return profiles.stream()
                 .filter(realProfiles::contains)
                 .findAny()
