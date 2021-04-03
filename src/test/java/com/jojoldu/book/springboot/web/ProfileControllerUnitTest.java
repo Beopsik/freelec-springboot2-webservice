@@ -3,7 +3,6 @@ package com.jojoldu.book.springboot.web;
 import org.junit.Test;
 import org.springframework.mock.env.MockEnvironment;
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.Assert.*;
 
 public class ProfileControllerUnitTest {
 
